@@ -1,12 +1,9 @@
-# Code Development Project
+# My Assignment_Solution
 
-## Install and run the application
+# Install and run the application
 
-This application depends on `NodeJS` and `npm` (developed on node version >= 8.x).
+This application depends on `NodeJS` and `npm`.
 
-```
-git clone https://rishijavia@bitbucket.org/rishijavia/filmstrip-gallery.git
-```
 
 ### Terminal 1 (server)
 ```
@@ -47,8 +44,6 @@ npm install
 ```
 npm test
 ```
-
-If you see the following error: `error while loading shared libraries: libfontconfig.so.1` install `libfontconfig1` using the following command: `sudo apt-get install libfontconfig1`
 
 **Start the client**
 
