@@ -1,6 +1,10 @@
 # My Assignment_Solution
 
-# Install and run the application
+Images of my website-----
+
+
+
+# Steps for how to Install and run the application
 
 This application depends on `NodeJS` and `npm`.
 
@@ -46,37 +50,23 @@ npm test
 ```
 
 **Start the client**
-
-This command will automatically open your browser window and start the client-side at `http://localhost:8080`
 ```
 npm start
 ```
+
+This command will automatically open your browser window and start the client-side at `http://localhost:8080`
+
 
 ## Stack
 
 ### Server
 
-The server is implemented using ExpressJS. The tests for server is written using MochaJS and ChaiJS. It has the following routes:
-
-```
-GET '/' : Returns a JSON array of all the data
-GET '/images/large/<img-name>.jpg' : Returns corresponding large image
-GET '/images/thumbnails/<img-name>.jpg' : Returns corresponding thumbnail image
-```
-
-Justification for routes:
-
-1. The dataset and their meta-data is small, and thus the whole dataset can be served at once without any issues
-
-2. How would I implement this if the dataset was big?
-  - I would have a route that would only send data for the thumbnails that are visible on the page to reduce the load on the server and request fulfillment time
-  - The next/previous button would call a route that would then return the next/previous 4 thumbnails
-  - The highlighted template (one that is selected) would be one of the thumbnails, so it would be easy to update as its information would be already available to us
+The server is implemented using ExpressJS. 
 
 ### Client
 
-The client-side is implemented using VueJS with AxiosJS to request data from the server. The tests for client-side are written using KarmaJS and MochaJS.
+The client-side is implemented using ReactJS with AxiosJS to request data from the server. 
 
-The whole app is a single page application developed using only one Vue component.
+The whole app is a single page application developed using only one ReactJS component.
 
-I chose Vue because it is easy to learn and implement and they have good and easy to follow documentation.
+
